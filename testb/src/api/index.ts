@@ -1,4 +1,5 @@
 import { BasicType, basicValidator } from "../datatype";
+import fetch from 'cross-fetch';
 
 export default function TestApi() {
   const testApiService = async (): Promise<BasicType> => {

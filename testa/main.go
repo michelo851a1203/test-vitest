@@ -25,7 +25,7 @@ func main() {
 	router.Use(UseCorsMiddleware())
 	router.GET("/", func(ctx *gin.Context) {
 		ctx.JSON(http.StatusOK, gin.H{
-			"message": "hello world",
+			"message": "",
 		})
 	})
 	router.Run(":8080")
